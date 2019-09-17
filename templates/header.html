@@ -1,0 +1,18 @@
+{% load staticfiles %}
+<div class  = "container">
+    <nav class = "navbar navbar-default" role = "navigation">
+        <div class  = "nav-barheader">
+            <a class = "navbar-brand" href = "#"><img src = "{% static '/images/logo.png' %}" width = "100px"></a>
+        </div>
+        <div>
+            <ul class = "nav navbar-nav" role = "navigation">
+                <li><a href = "{% url 'blog:blog_title' %}">BLOG</a></li>
+            </ul>
+            <ul class = "nav navbar-nav navbar-right">
+                
+            </ul>
+        </div>
+    </nav>
+</div>
+<script src="{% static 'js/jquery.js'%}"></script>
+<script src="{% static 'js/bootstrap.js' %}"></script>

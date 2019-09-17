@@ -1,0 +1,26 @@
+{% extends "blog/base.html" %}
+{% load staticfiles %}
+
+{% block title %}articles list{% endblock %}
+
+{% block content %}
+
+<div class="container">
+<div class="col-md-9">
+	
+	<h1>{{ article.title }}</h1>
+		
+	<div id = "editormd-view" id = "article_body">
+		{% autoescape off %} 
+	    {{article.body}}
+		{% endautoescape %} 
+	</div>
+	</div>
+</div>
+<script src='{% static "js/jquery.js" %}'></script>
+<script type="text/javascript" src="{% static 'js/layer.js'%}"></script>
+
+<script type="text/javascript">
+
+</script>
+{% endblock %}	

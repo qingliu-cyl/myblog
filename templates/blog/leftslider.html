@@ -1,0 +1,9 @@
+<div class = "bg-info">
+	<div class = "text-center" style = "margin-top:5px">
+			{% for column in columns %}
+    		<p><a name = "sdsd" href = "{% url 'blog:article_list' column.column %}">{{ column.column }}</a></p>
+			{% empty %}
+			<p>还没有分类</p>
+			{% endfor %}
+	</div>
+</div>
