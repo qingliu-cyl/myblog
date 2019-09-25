@@ -5,7 +5,7 @@ from django.core.urlresolvers import reverse
 
 from .forms import LoginForm
 
-# Create your views here
+# Create your views here。
 def user_login(request):
     if request.method == "POST":
         login_form = LoginForm(request.POST)
